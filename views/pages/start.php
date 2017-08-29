@@ -53,9 +53,9 @@
 				</div>
 			</div>
 			<div class="faux-col" style="padding-top:15rem;">
-				<button type="button" class="btn btn-default" >
+				<a type="button" href="almost-done" class="btn btn-default" >
 				   &nbsp;<span class="glyphicon glyphicon-chevron-right" ></span> &nbsp;
-				</button>
+				</a>
 			</div>
 		</div>
 	</div>

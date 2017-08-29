@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="padding-top:3rem;">
 	<h2 class="text-center">What's your food traveller's personality?</h2>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 text-center">
