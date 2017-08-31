@@ -1,0 +1,36 @@
+.ui-container{
+	display:table;
+	width:100%;
+	height:100%;
+}
+.ui-wrapper{
+	display:table-row;
+}
+.ui-top,.ui-sidebar,.ui-main{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.ui-sidebar{
+	width:15%;
+}
+.ui-main{
+	width:70%;
+	
+}
+.ui-top{
+	height:100px;
+	width: 70%;
+	padding-top:2rem;
+}
+.ui-content{
+	padding:2rem 0rem;
+}
+.ui-sidebar>.btn{
+	margin-top:-50px;
+	border:none;
+}
+
+.ui-main>.ui-content:first-child{
+	margin-top:-100px;
+}
