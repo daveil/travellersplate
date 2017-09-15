@@ -1,18 +1,10 @@
 <?php
 echo '<pre>';
 $scheme = $_SERVER['REQUEST_SCHEME'];
-$host = $_SERVER['SERVER_NAME'];
-$port = $_SERVER['SERVER_PORT'];
+$host = $_SERVER['HTTP_HOST'];
 
-$url=$scheme.'://';
-$url.=$host;
-if($port!=80){
-	$url.=':'.$port;
-}
+$url=$scheme.'://'.$host;
 if(preg_match('/localhost/', $host))
 	$url.=dirname(dirname($_SERVER['PHP_SELF']));
 $url.='/almost-done';
-echo $url.'<br>';
-
-print_r($_SERVER);
-//header('Location: /almost-done');
+header('Location: '.$url);
