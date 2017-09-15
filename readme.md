@@ -1,4 +1,5 @@
 # Info
+* Page of concern is `locahost/travellersplate/start`.
 * Edit page views/pages/start.php
 * Related controller is at js/controller/quiz_controller.js
 * Data loaded from test json api/questions.json
