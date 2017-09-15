@@ -16,8 +16,8 @@
 - [ ] Use a `<form>` tag to submit the data (NOT ajax this time) with action="api/process.php" method="POST" 
 - [ ] Add `input[type="hidden"]` to store the answers.
 - [ ] Format should be :
-	⋅⋅⋅questions: "id,id,id"
-	⋅⋅⋅responses: "id,id,id"
-	⋅⋅⋅`<input type="hidden" name="question" value="1,2,3" />`
-	⋅⋅⋅`<input type="hidden" name="questions" value="1,4,2" />`
 	
+	questions: "id,id,id"
+	responses: "id,id,id"
+	`<input type="hidden" name="question" value="1,2,3" />`
+	`<input type="hidden" name="questions" value="1,4,2" />`
