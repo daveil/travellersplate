@@ -2,10 +2,18 @@
 	#question{
 		font-size:14pt;
 	}
-	.active{
-		color: blue;
+	#LoadingScreen .ui-content,#MainScreen .ui-content{
+		padding-top:15%;
 	}
-	.hide{display:none;}
+	.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus,.list-group-item.active:active{
+		outline:none;
+		background-color: #d9534f !important;
+		border-color: #a90f0b !important
+	}
+	.hide{
+		display:none;
+	}
+
 </style>
 <script data-main="js/config" src="js/bower_components/requirejs/require.js"></script>
 <div class="ui-container ng-cloak" ng-controller="QuizController">
