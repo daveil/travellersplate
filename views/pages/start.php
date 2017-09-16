@@ -10,10 +10,10 @@
 <script data-main="js/config" src="js/bower_components/requirejs/require.js"></script>
 <div class="ui-container ng-cloak" ng-controller="QuizController">
 	<!--Top Bar-->
-	<div class="ui-wrapper hide" id="TopBar" ng-class="{hide:Loading}">
+	<div class="ui-wrapper " id="TopBar" >
 		<div class="ui-sidebar"></div>
 		<div class="ui-top">
-			<div class="progress" >
+			<div class="progress hide" ng-class="{hide:Loading}">
 				<div class="progress-bar  progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{QuizProgress}}%;">
 					<span class="sr-only">{{QuizProgress}}% Complete</span>
 				</div>
