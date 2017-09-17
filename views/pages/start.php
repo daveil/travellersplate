@@ -13,12 +13,49 @@
 	.hide{
 		display:none;
 	}
+	
+	.fadeInAndOut {
+		-webkit-animation: fadeinout 4s linear forwards; 
+		-moz-animation: fadeinout 4s linear forwards; 
+		-ms-animation: fadeinout 4s linear forwards; 
+		-o-animation: fadeinout 4s linear forwards;
+		animation: fadeinout 3s linear forwards;
+		
+	}
+
+	@-webkit-keyframes fadeinout {
+	  0%,100% { opacity: 0; }
+	  50% { opacity: 1; }
+	}
+	
+	@-moz-keyframes fadeinout {
+	  0%,100% { opacity: 0; }
+	  50% { opacity: 1; }
+	}
+	
+	@-ms-keyframes fadeinout {
+	  0%,100% { opacity: 0; }
+	  50% { opacity: 1; }
+	}
+
+	@-o-keyframes fadeinout {
+	  0%,100% { opacity: 0; }
+	  50% { opacity: 1; }
+	}
+
+	@keyframes fadeinout {
+	  0%,100% { opacity: 0; }
+	  50% { opacity: 1; }
+	}
+	
+
 
 </style>
 <script data-main="js/config" src="js/bower_components/requirejs/require.js"></script>
 <div class="ui-container ng-cloak" ng-controller="QuizController">
+
 	<!--Top Bar-->
-	<div class="ui-wrapper " id="TopBar" >
+	<div class="ui-wrapper" id="TopBar" >
 		<div class="ui-sidebar"></div>
 		<div class="ui-top">
 			<div class="progress hide" ng-class="{hide:Loading}">
@@ -31,7 +68,7 @@
 	</div>
 
 	<!--Preloader-->
-	<div class="ui-wrapper" id="LoadingScreen" ng-class="{hide:!Loading}">
+	<div class="ui-wrapper fadeInAndOut" id="LoadingScreen" ng-class="{hide:!Loading}">
 		<div class="ui-sidebar ui-left">
 			
 		</div>
@@ -40,7 +77,7 @@
 				<h2 class="text-center">One moment please</h2>
 				<!--Fake preloading-->
 				<p>
-					Loading content. <a ng-click="Loading=false">( Fake preloader click me)</a>
+					Loading content.<img src="/travellersplate/img/preloader.gif" style="width:30px;height:22px;">
 				</p>
 			</div>
 		</div>

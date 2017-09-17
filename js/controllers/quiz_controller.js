@@ -1,5 +1,5 @@
 define(['app'],function(app){
-	app.controller('QuizController', function ($rootScope, $scope,$http) {
+	app.controller('QuizController', function ($rootScope, $scope,$http,$timeout) {
 		$scope.Loading=true;
 		$scope.QuizProgress=0;
 		$scope.CurrentIndex=0;
@@ -14,16 +14,20 @@ define(['app'],function(app){
 		}).then(function success(response){
 			$scope.questionnaire = response.data;
 			$scope.FinalIndex = response.data.length-1;
-			
 			//Get Progress Percentage Base On Data Lenght 
 			$scope.QuizProgressPercentage = 100/response.data.length;
+		
+
+			$timeout( function(){
+				$scope.Loading=false;
+			},3100);
+		
 		});
 		
 		$scope.navigate =  function(action){
 			//Submit Form
 			if(action == "next" && $scope.CurrentIndex == $scope.FinalIndex && $scope.responses[$scope.CurrentIndex]){
 				document.getElementById("ProcessForm").submit();
-				//return;
 			}
 			
 			//Navigation Handler
