@@ -28,6 +28,7 @@ define(['app'],function(app){
 			//Submit Form
 			if(action == "next" && $scope.CurrentIndex == $scope.FinalIndex && $scope.responses[$scope.CurrentIndex]){
 				document.getElementById("ProcessForm").submit();
+				return;
 			}
 			
 			//Navigation Handler
