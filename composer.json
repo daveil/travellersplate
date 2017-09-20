@@ -6,5 +6,7 @@
             "email": "arroyo.daveil@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "simple-crud/simple-crud": "^6.11"
+    }
 }
